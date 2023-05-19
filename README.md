@@ -1,2 +1,2 @@
 # Proyecto-3
-Videojuego de un hotel usando tablas hash
+Parqueadero usando tablas hash
