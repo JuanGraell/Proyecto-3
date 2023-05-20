@@ -1,15 +1,25 @@
 import tkinter as tk
 from tkinter import messagebox
+import re
 
 class Vechiculo:
     def __init__(self, placa):
         self.placa = placa
-
 class ParkingLot:
     def __init__(self):
         self.capacity = 60  # Capacidad del parking
         self.slots = [None] * self.capacity  # Inicializar todos los slots como vacíos
-
+    def validar_formato_placa(self, placa):
+        """
+        Función para verificar el formato de la placa.
+        Utiliza el formato AAA000 para verificar que el usuario no meta una placa incorrecta.
+        """
+        formato_placa = r'^[A-Z]{3}\d{3}$'
+        if re.match(formato_placa, placa):
+            return True
+        else:
+            return False
+        
     def hash_function(self, placa):
         """
         Función de hash que determina el índice para almacenar un vehículo en la tabla hash.
@@ -22,26 +32,29 @@ class ParkingLot:
         """
         Inserta un vehículo en el parqueadero utilizando una tabla hash con manejo de colisiones.
         """
-        index = self.hash_function(Vechiculo.placa)
-        
-        if Vechiculo.placa in self.slots:
-            messagebox.showinfo("Advertencia","El vehiculo ya esta en el parqueadero.")
-        elif self.slots[index] is None:
-            self.slots[index] = Vechiculo.placa
-            messagebox.showinfo("Advertencia",f"Vehículo con placa {Vechiculo.placa} estacionado en el puesto {index+1}.")
+        if not self.validar_formato_placa(Vechiculo.placa):
+            messagebox.showinfo("Advertencia", "El formato de la placa es incorrecto.")
+        elif Vechiculo.placa in self.slots:
+            messagebox.showinfo("Advertencia", "El vehículo ya está en el parqueadero.")
         else:
-            # Manejo de colisiones mediante búsqueda lineal
-            i = index + 1
-            while i != index:
-                if i >= self.capacity:
-                    i = 0  # Volver al principio del array
+            index = self.hash_function(Vechiculo.placa)
 
-                if self.slots[i] is None:
-                    self.slots[i] = Vechiculo.placa
-                    messagebox.showinfo("Advertencia",f"Vehículo con placa {Vechiculo.placa} se estaciono en el puesto {i+1}.")
-                    return
-                i += 1
-            messagebox.showinfo("Advertencia","El parking está lleno. No se puede estacionar el vehículo.")
+            if self.slots[index] is None:
+                self.slots[index] = Vechiculo.placa
+                messagebox.showinfo("Advertencia", f"Vehículo con placa {Vechiculo.placa} estacionado en el puesto {index+1}.")
+            else:
+                # Manejo de colisiones mediante búsqueda lineal
+                i = index + 1
+                while i != index:
+                    if i >= self.capacity:
+                        i = 0  # Volver al principio del array
+
+                    if self.slots[i] is None:
+                        self.slots[i] = Vechiculo.placa
+                        messagebox.showinfo("Advertencia", f"Vehículo con placa {Vechiculo.placa} se estacionó en el puesto {i+1}.")
+                        return
+                    i += 1
+                messagebox.showinfo("Advertencia", "El parking está lleno. No se puede estacionar el vehículo.")
 
     def find_Vechiculo(self, placa):
         """
