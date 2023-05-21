@@ -501,7 +501,7 @@ class ParkingLot:
         slotStatus60.place(x=601,y=205)
         if self.slots[59] != None: slotStatus60.configure(bg="red",text=self.slots[59],font=("Arial",7))
 
-        #Botones para pasar de ventanas o pisos
+        #Botones para pasar de ventanas o pisos 
         btnp2=tk.Button(ventana_p3,text="Piso 2",command=abrirVentanaP2)
         btnp2.place(x=5,y=375)
 
