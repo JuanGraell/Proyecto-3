@@ -289,83 +289,83 @@ class ParkingLot:
         #del 276 al 355 el slotStatus que permite saber si el parqueadero esta ocupado o no.
         slotStatus21=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus21.place(x=80,y=110)
-        if self.slots[20] != None: slotStatus21.configure(bg="red")
+        if self.slots[20] != None: slotStatus21.configure(bg="red",text=self.slots[20],font=("Arial",7))
 
         slotStatus22=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus22.place(x=139,y=110)
-        if self.slots[21] != None: slotStatus22.configure(bg="red")
+        if self.slots[21] != None: slotStatus22.configure(bg="red",text=self.slots[21],font=("Arial",7))
 
         slotStatus23=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus23.place(x=196,y=110)
-        if self.slots[22] != None: slotStatus23.configure(bg="red")
+        if self.slots[22] != None: slotStatus23.configure(bg="red",text=self.slots[22],font=("Arial",7))
 
         slotStatus24=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus24.place(x=255,y=110)
-        if self.slots[23] != None: slotStatus24.configure(bg="red")
+        if self.slots[23] != None: slotStatus24.configure(bg="red",text=self.slots[23],font=("Arial",7))
 
         slotStatus25=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus25.place(x=313,y=110)
-        if self.slots[24] != None: slotStatus25.configure(bg="red")
+        if self.slots[24] != None: slotStatus25.configure(bg="red",text=self.slots[24],font=("Arial",7))
 
         slotStatus26=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus26.place(x=370,y=110)
-        if self.slots[25] != None: slotStatus26.configure(bg="red")
+        if self.slots[25] != None: slotStatus26.configure(bg="red",text=self.slots[25],font=("Arial",7))
 
         slotStatus27=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus27.place(x=428,y=110)
-        if self.slots[26] != None: slotStatus27.configure(bg="red")
+        if self.slots[26] != None: slotStatus27.configure(bg="red",text=self.slots[26],font=("Arial",7))
 
         slotStatus28=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus28.place(x=486,y=110)
-        if self.slots[27] != None: slotStatus28.configure(bg="red")
+        if self.slots[27] != None: slotStatus28.configure(bg="red",text=self.slots[27],font=("Arial",7))
 
         slotStatus29=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus29.place(x=544,y=110)
-        if self.slots[28] != None: slotStatus29.configure(bg="red")
+        if self.slots[28] != None: slotStatus29.configure(bg="red",text=self.slots[28],font=("Arial",7))
 
         slotStatus30=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus30.place(x=605,y=110)
-        if self.slots[29] != None: slotStatus30.configure(bg="red")
+        if self.slots[29] != None: slotStatus30.configure(bg="red",text=self.slots[29],font=("Arial",7))
 
         slotStatus31=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus31.place(x=80,y=205)
-        if self.slots[30] != None: slotStatus31.configure(bg="red")
+        if self.slots[30] != None: slotStatus31.configure(bg="red",text=self.slots[30],font=("Arial",7))
 
         slotStatus32=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus32.place(x=139,y=205)
-        if self.slots[31] != None: slotStatus32.configure(bg="red")
+        if self.slots[31] != None: slotStatus32.configure(bg="red",text=self.slots[31],font=("Arial",7))
 
         slotStatus33=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus33.place(x=196,y=205)
-        if self.slots[32] != None: slotStatus33.configure(bg="red")
+        if self.slots[32] != None: slotStatus33.configure(bg="red",text=self.slots[32],font=("Arial",7))
 
         slotStatus34=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus34.place(x=255,y=205)
-        if self.slots[33] != None: slotStatus34.configure(bg="red")
+        if self.slots[33] != None: slotStatus34.configure(bg="red",text=self.slots[33],font=("Arial",7))
 
         slotStatus35=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus35.place(x=313,y=205)
-        if self.slots[34] != None: slotStatus35.configure(bg="red")
+        if self.slots[34] != None: slotStatus35.configure(bg="red",text=self.slots[34],font=("Arial",7))
 
         slotStatus36=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus36.place(x=370,y=205)
-        if self.slots[35] != None: slotStatus36.configure(bg="red")
+        if self.slots[35] != None: slotStatus36.configure(bg="red",text=self.slots[35],font=("Arial",7))
 
         slotStatus37=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus37.place(x=428,y=205)
-        if self.slots[36] != None: slotStatus37.configure(bg="red")
+        if self.slots[36] != None: slotStatus37.configure(bg="red",text=self.slots[36],font=("Arial",7))
 
         slotStatus38=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus38.place(x=486,y=205)
-        if self.slots[37] != None: slotStatus38.configure(bg="red")
+        if self.slots[37] != None: slotStatus38.configure(bg="red",text=self.slots[37],font=("Arial",7))
 
         slotStatus39=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus39.place(x=544,y=205)
-        if self.slots[38] != None: slotStatus39.configure(bg="red")
+        if self.slots[38] != None: slotStatus39.configure(bg="red",text=self.slots[38],font=("Arial",7))
 
         slotStatus40=tk.Label(ventana_p2, width=4,height=1,bg="green")
         slotStatus40.place(x=605,y=205)
-        if self.slots[39] != None: slotStatus40.configure(bg="red")
+        if self.slots[39] != None: slotStatus40.configure(bg="red",text=self.slots[39],font=("Arial",7))
 
         #Botones para pasar de ventanas.
         btnp1=tk.Button(ventana_p2,text="Piso 1",command=abrirVentanaP1)
@@ -434,83 +434,83 @@ class ParkingLot:
         #del 421 al 500 el slotStatus que permite saber si el parqueadero esta ocupado o no.
         slotStatus41=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus41.place(x=80,y=110)
-        if self.slots[40] != None: slotStatus41.configure(bg="red")
+        if self.slots[40] != None: slotStatus41.configure(bg="red",text=self.slots[40],font=("Arial",7))
 
         slotStatus42=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus42.place(x=139,y=110)
-        if self.slots[41] != None: slotStatus42.configure(bg="red")
+        if self.slots[41] != None: slotStatus42.configure(bg="red",text=self.slots[41],font=("Arial",7))
 
         slotStatus43=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus43.place(x=196,y=110)
-        if self.slots[42] != None: slotStatus43.configure(bg="red")
+        if self.slots[42] != None: slotStatus43.configure(bg="red",text=self.slots[42],font=("Arial",7))
 
         slotStatus44=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus44.place(x=255,y=110)
-        if self.slots[43] != None: slotStatus44.configure(bg="red")
+        if self.slots[43] != None: slotStatus44.configure(bg="red",text=self.slots[43],font=("Arial",7))
 
         slotStatus45=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus45.place(x=313,y=110)
-        if self.slots[44] != None: slotStatus45.configure(bg="red")
+        if self.slots[44] != None: slotStatus45.configure(bg="red",text=self.slots[44],font=("Arial",7))
 
         slotStatus46=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus46.place(x=370,y=110)
-        if self.slots[45] != None: slotStatus46.configure(bg="red")
+        if self.slots[45] != None: slotStatus46.configure(bg="red",text=self.slots[45],font=("Arial",7))
 
         slotStatus47=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus47.place(x=428,y=110)
-        if self.slots[46] != None: slotStatus47.configure(bg="red")
+        if self.slots[46] != None: slotStatus47.configure(bg="red",text=self.slots[46],font=("Arial",7))
 
         slotStatus48=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus48.place(x=486,y=110)
-        if self.slots[47] != None: slotStatus48.configure(bg="red")
+        if self.slots[47] != None: slotStatus48.configure(bg="red",text=self.slots[47],font=("Arial",7))
 
         slotStatus49=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus49.place(x=544,y=110)
-        if self.slots[48] != None: slotStatus49.configure(bg="red")
+        if self.slots[48] != None: slotStatus49.configure(bg="red",text=self.slots[48],font=("Arial",7))
 
         slotStatus50=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus50.place(x=605,y=110)
-        if self.slots[49] != None: slotStatus50.configure(bg="red")
+        if self.slots[49] != None: slotStatus50.configure(bg="red",text=self.slots[49],font=("Arial",7))
 
         slotStatus51=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus51.place(x=80,y=205)
-        if self.slots[50] != None: slotStatus51.configure(bg="red")
+        if self.slots[50] != None: slotStatus51.configure(bg="red",text=self.slots[50],font=("Arial",7))
 
         slotStatus52=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus52.place(x=139,y=205)
-        if self.slots[51] != None: slotStatus52.configure(bg="red")
+        if self.slots[51] != None: slotStatus52.configure(bg="red",text=self.slots[51],font=("Arial",7))
 
         slotStatus53=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus53.place(x=196,y=205)
-        if self.slots[52] != None: slotStatus53.configure(bg="red")
+        if self.slots[52] != None: slotStatus53.configure(bg="red",text=self.slots[52],font=("Arial",7))
 
         slotStatus54=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus54.place(x=255,y=205)
-        if self.slots[53] != None: slotStatus54.configure(bg="red")
+        if self.slots[53] != None: slotStatus54.configure(bg="red",text=self.slots[53],font=("Arial",7))
 
         slotStatus55=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus55.place(x=313,y=205)
-        if self.slots[54] != None: slotStatus55.configure(bg="red")
+        if self.slots[54] != None: slotStatus55.configure(bg="red",text=self.slots[54],font=("Arial",7))
 
         slotStatus56=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus56.place(x=370,y=205)
-        if self.slots[55] != None: slotStatus56.configure(bg="red")
+        if self.slots[55] != None: slotStatus56.configure(bg="red",text=self.slots[55],font=("Arial",7))
 
         slotStatus57=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus57.place(x=428,y=205)
-        if self.slots[56] != None: slotStatus57.configure(bg="red")
+        if self.slots[56] != None: slotStatus57.configure(bg="red",text=self.slots[56],font=("Arial",7))
 
         slotStatus58=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus58.place(x=486,y=205)
-        if self.slots[57] != None: slotStatus58.configure(bg="red")
+        if self.slots[57] != None: slotStatus58.configure(bg="red",text=self.slots[57],font=("Arial",7))
 
         slotStatus59=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus59.place(x=544,y=205)
-        if self.slots[58] != None: slotStatus59.configure(bg="red")
+        if self.slots[58] != None: slotStatus59.configure(bg="red",text=self.slots[58],font=("Arial",7))
 
         slotStatus60=tk.Label(ventana_p3, width=4,height=1,bg="green")
         slotStatus60.place(x=605,y=205)
-        if self.slots[59] != None: slotStatus60.configure(bg="red")
+        if self.slots[59] != None: slotStatus60.configure(bg="red",text=self.slots[59],font=("Arial",7))
 
         #Botones para pasar de ventanas o pisos
         btnp1=tk.Button(ventana_p3,text="Piso 1",command=abrirVentanaP1)
