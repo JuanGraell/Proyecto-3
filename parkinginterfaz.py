@@ -225,11 +225,11 @@ class ParkingLot:
         entryp1=tk.Entry(ventana_p1)
         entryp1.place(x=210,y=375)
         InsBtnp1=tk.Button(ventana_p1,text="Insertar Auto",command=obtenerEntryIns)
-        InsBtnp1.place(x=350,y=350)
-        DelBtnp1=tk.Button(ventana_p1,text="Borrar Auto",command=obtenerEntryDel)
-        DelBtnp1.place(x=353,y=395)
+        InsBtnp1.place(x=350,y=344)
         FindBtnp1=tk.Button(ventana_p1,text="Buscar Auto", command=ObtenerEntryFind)
-        FindBtnp1.place(x=440,y=376)
+        FindBtnp1.place(x=352,y=372)
+        DelBtnp1=tk.Button(ventana_p1,text="Borrar Auto",command=obtenerEntryDel)
+        DelBtnp1.place(x=353,y=400)
 
         ventana_p1.mainloop()
 
@@ -371,16 +371,17 @@ class ParkingLot:
         entryp2=tk.Entry(ventana_p2)
         entryp2.place(x=210,y=375)
         InsBtnp2=tk.Button(ventana_p2,text="Insertar Auto",command=obtenerEntryIns)
-        InsBtnp2.place(x=350,y=350)
-        DelBtnp2=tk.Button(ventana_p2,text="Borrar Auto",command=obtenerEntryDel)
-        DelBtnp2.place(x=353,y=395)
+        InsBtnp2.place(x=350,y=344)
         FindBtnp2=tk.Button(ventana_p2,text="Buscar Auto", command=ObtenerEntryFind)
-        FindBtnp2.place(x=440,y=376)
+        FindBtnp2.place(x=352,y=372)
+        DelBtnp2=tk.Button(ventana_p2,text="Borrar Auto",command=obtenerEntryDel)
+        DelBtnp2.place(x=353,y=400)
 
         ventana_p2.mainloop()
     
     #Funcion interfaz piso 3
     def piso3(self):
+
         #Funcion para boton para cambiar a la ventana del piso 2
         def abrirVentanaP2():
             ventana_p3.destroy()
@@ -501,7 +502,7 @@ class ParkingLot:
         slotStatus60.place(x=601,y=205)
         if self.slots[59] != None: slotStatus60.configure(bg="red",text=self.slots[59],font=("Arial",7))
 
-        #Botones para pasar de ventanas o pisos 
+        #Botones para pasar de ventanas o pisos
         btnp2=tk.Button(ventana_p3,text="Piso 2",command=abrirVentanaP2)
         btnp2.place(x=5,y=375)
 
@@ -509,11 +510,11 @@ class ParkingLot:
         entryp3=tk.Entry(ventana_p3)
         entryp3.place(x=210,y=375)
         InsBtnp3=tk.Button(ventana_p3,text="Insertar Auto",command=obtenerEntryIns)
-        InsBtnp3.place(x=350,y=350)
-        DelBtnp3=tk.Button(ventana_p3,text="Borrar Auto",command=obtenerEntryDel)
-        DelBtnp3.place(x=353,y=395)
+        InsBtnp3.place(x=350,y=344)
         FindBtnp3=tk.Button(ventana_p3,text="Buscar Auto", command=ObtenerEntryFind)
-        FindBtnp3.place(x=440,y=376)
+        FindBtnp3.place(x=352,y=372)
+        DelBtnp3=tk.Button(ventana_p3,text="Borrar Auto",command=obtenerEntryDel)
+        DelBtnp3.place(x=353,y=400)
 
         ventana_p3.mainloop()
 
